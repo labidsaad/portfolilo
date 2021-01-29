@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/cbd00d42fb.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet"> 
+
+
+	<style>
+		html {
+		  scroll-behavior: smooth;
+		}
+	
+		.main{
+	
+			font-family: 'Lobster', cursive;
+			font-size:40px;
+			margin-top:140px;
+			transition:font-size 1s;
+			height:300px;
+		}
+	
+		.pvc {
+			background-image: url("index.jpg"); /* The image used */
+			background-color: #000; /* Used if the image is unavailable */
+			height: 100vh; /* You must set a specified height */
+			background-position: center; /* Center the image */
+			background-repeat: no-repeat; /* Do not repeat the image */
+			background-size: cover; /* Resize the background image to cover the entire container */
+		}
+	
+		.main:hover{
+		
+			font-size:45px;
+	
+		}
+	
+	
+		.contact{
+	
+			font-family: 'Hachi Maru Pop', cursive;
+			font-weight:bold;
+		}
+	
+	
+		.img{
+	
+			height:200px;
+	
+		}
+	
+	
+		.card{
+	
+			transition:box-shadow .2s,width 1s;
+	
+		}
+	
+		.card:hover{
+	
+			box-shadow:2px 3px 5px gray;
+			
+		}
+	
+	
+		.csl{
+	
+			background-color:#000;
+	
+			padding:7% 10%;
+	
+		}
+	
+	
+		.at{
+	
+			padding:100px;
+	
+		}
+	
+	
+	
+		.fnts{
+	
+			font-family: 'Potta One', cursive;
+	
+	
+		}
+	
+	
+		#feedback{
+	
+		
+			background-color:#0d0442;
+			padding:7% 10% ;
+	
+	
+		}
+	
+	
+		.carousel-item{
+	
+			padding:5% 15%;
+			text-align:center;
+			font-style:italic;
+		}
+	
+	
+		.fos{
+	
+			font-size: 15px;
+			color: white;
+			font-weight: 600;
+			top: 50px;
+			
+	
+		}
+	
+		ul li a:hover{
+	
+			color: crimson;
+	
+		}
+		
+		.fs-2{
+	
+			font-size:40px;
+			position: relative;
+			top: 300px;
+			text-shadow: 2px 3px 5px gray;
+		}
+	
+	
+		.media-body{
+	
+			border-radius: 10px;
+			background: crimson;
+			color: #fff;
+	
+		}
+	
+		.card{
+		
+		}
+	</style>
+	
+
+</head>
+<body>
+
+	
+	<div class="container">
+
+
+		<div class="pvc row p-5">
+
+			
+
+			<div class="col-1 ml-3 mr-0">
+
+		
+				<i class="fa-5x fas fa-coffee" style="color:brown;"></i>				
+				
+
+			</div>
+
+
+			<div class="col-4 mb-2 ">
+
+		
+			
+				<h3 class="fs-2 text-white">Hasan Food Store</h3>				
+
+
+			</div>
+
+			<div class="col-6 fos">
+	
+			
+				<ul class="nav ml-5 p-1 justify-content-end ">
+
+			
+					<li class="nav-item"> <a href="#home" class="nav-link text-white">Home</a> </li>					
+			
+					<li class="nav-item"> <a href="#introduce" class="nav-link text-white">Introduction</a> </li>
+			
+					<li class="nav-item"> <a href="#blog" class="nav-link text-white">Blogs</a> </li>								
+
+					<li class="nav-item"> <a href="#service" class="nav-link text-white">Services</a> </li>											
+
+					<li class="nav-item"> <a href="#contacts" class="nav-link text-white">Contacts</a> </li>					
+
+
+				</ul>
+				
+
+			</div>
+
+		</div>
+
+
+		<div class="main text-center text-secondary" id="home">
+
+
+		
+				<div>Welcome</div>
+	
+				<div>To</div>
+
+				<div>Hasan Food Store</div>	
+		
+
+		</div>
+
+			
+				<br></br>
+
+
+		<div class="jumbotron pt-2" id="introduce">
+
+			
+				<h2 class="title text-center mb-4">About us</h2>
+
+
+			<div class="row">
+
+			
+				<div class="col-4 align-self-center text-center p-2 text-primary">
+
+					<p class="contact">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+
+				</div>
+
+
+				<div class="col-8">
+
+					
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+
+
+				</div>
+
+
+			</div>
+
+			
+				<br></br>
+
+
+
+			<div>
+
+
+
+
+				<div class="row">
+
+				
+					<div class="col-7">
+
+
+						<a href="#" class="strecthed-link"> <img src="map.jpg"> </a>						
+
+
+					</div>
+
+
+
+					<div class=" fnts col-5 align-self-center">
+
+
+
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<p>
+
+
+
+					</div>
+					
+
+
+				</div>				
+
+
+
+
+			</div>
+
+
+		</div>
+
+
+
+		<div id="blog">
+		
+			<h2 class="text-center mt-5 mb-4">Our Blog</h2>
+
+
+		<div class="row">
+
+
+			<div class="col-4">
+
+
+				
+
+
+
+					<div class="media-body border p-3">
+
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Why do we use it?
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+
+
+					</div>					
+
+
+
+			
+
+
+			</div>
+
+
+
+			<div class="col-4">
+
+
+				
+
+
+
+					<div class="media-body border p-3 ">
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Why do we use it?
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+
+
+					</div>					
+
+
+
+			
+
+
+			</div>
+
+
+
+
+			<div class="col-4">
+
+
+				
+
+
+
+					<div class="media-body border p-3">
+
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Why do we use it?
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+
+
+
+					</div>					
+
+
+
+			
+
+
+			</div>
+
+
+		</div>
+
+	
+		
+	<div id="service">
+
+
+
+
+		
+		<h2 class="title text-center my-3">Services</h2>
+
+
+			
+			<div class="row">
+
+
+
+
+				<div class="col-4 text-center">
+
+
+
+						
+					
+						<i class="fa-3x fa fa-heart my-3"></i>
+
+						<h5 class="text-weight-bolder">Great Services</h5>
+						
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+				</div>
+
+
+				<div class="col-4 text-center">
+
+
+
+						
+					
+						<i class="fa-3x fas fa-drumstick-bite my-3"></i>
+
+						<h5 class="text-weight-bolder">Reach food collection</h5>
+						
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+				</div>
+
+
+				
+				<div class="col-4 text-center">
+
+
+
+						
+					
+						<i class="fa-3x fas fa-location-arrow my-3"></i>
+
+						<h5 class="text-weight-bolder">Accross 50<sup>+</sup> cities </h5>
+						
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+				</div>
+
+
+
+
+			</div>
+
+
+
+
+			
+			
+			<div class="row">
+
+
+
+
+				<div class="col-4 text-center">
+
+
+
+						
+					
+						<i class="fa-3x fas fa-hourglass-half my-3"></i>
+
+						<h5 class="text-weight-bolder">Delivery within hours</h5>
+						
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+				</div>
+
+
+				<div class="col-4 text-center">
+
+
+
+						
+					
+						<i class="fa-3x fas fa-store my-3"></i>
+
+						<h5 class="text-weight-bolder">100<sup>+</sup> section</h5>
+						
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+				</div>
+
+
+				
+				<div class="col-4 text-center">
+
+
+
+						
+					
+						<i class="fa-3x fas fa-coins my-3"></i>
+
+						<h5 class="text-weight-bolder">In your ability</h5>
+						
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+				</div>
+
+
+
+
+			</div>
+
+
+	
+
+
+		<div>
+
+
+			<h2 class="title text-center my-4 ">Items</h2>
+
+
+			<div class="row">
+
+
+					
+
+
+				<div class="col-4">
+
+					
+					<div class="card">
+
+			
+						<img class="img" src="food-c.jpg">
+
+						<div class="card-body p-3">
+					
+						<h5>Burger</h5>
+
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+						<a href="#" class="stretched-link text-decoration-none">Order Here</a>
+
+						</div>						
+
+					</div>
+		
+
+				</div>	
+
+
+				<div class="col-4">
+
+					
+					<div class="card">
+
+			
+						<img class="img" src="food-b.jpg">
+
+						<div class="card-body p-3">
+					
+						<h5>Pasta</h5>
+
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+						<a href="#" class="stretched-link text-decoration-none">Order Here</a>
+
+						</div>						
+
+					</div>
+		
+
+				</div>
+
+
+				<div class="col-4">
+
+					
+					<div class="card">
+
+			
+						<img class="img" src="food-a.jpg">
+
+						<div class="card-body p-3">
+					
+						<h5>Chicken Noddles</h5>
+
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+						<a href="#" class="stretched-link text-decoration-none">Order Here</a>
+
+						</div>	
+
+										
+
+					</div>
+			
+
+						
+
+				</div>
+		
+
+
+			</div>			
+
+						<br/>
+					
+				<a href="#" class="border bg-secondary text-white p-3 text-decoration-none" >See Full Items</a>
+
+				
+						<br></br>
+
+		
+				<div class="alert alert-primary alert-dismissible">
+
+
+					<button class="close" data-dismiss="alert">&times</button>
+	
+
+					Winter festive is on..Order and get <b class="text-warning"> Discount </b> on your favourite food <a href="#" class=" ml-2 text-decoration-none justify-content-end">Order here</a>
+
+
+						
+
+				</div>
+
+
+
+		</div>
+
+
+
+		<div class="jumbotron mt-5 pt-3" id="contacts">
+		
+
+				<h3 class="title text-center mb-4">Order Section</h3>
+
+
+			 <form action="/action_page.php" class="needs-validation" novalidate>
+
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Someplace,Galaxy</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +880192*****87</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> abc1234@Something.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Phone" type="" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Your Items..." rows="5" required style="resize:none;"></textarea><br>
+      <div class="row">   
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-primary pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+	
+
+
+
+
+
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script> 
+
+
+
+		</div>
+
+
+		<!-------- 	Carousel starts here		------------>
+
+		
+		<div class="text-white">
+
+			
+			<section id="feedback">
+
+				<div class="section-title">
+
+					<h3 class="text-center">Feedback</h3>
+		
+				
+						<hr>			
+							
+
+
+				</div>
+
+
+					<div class="row">
+
+			
+						<div class="col-lg-12">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-pause="hover">
+  
+
+
+
+	<ol class="carousel-indicators">
+
+
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+
+ 	 </ol>
+
+
+
+ 	 <div class="carousel-inner">
+
+
+    <div class="carousel-item active">
+
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+
+
+     
+    </div>
+
+
+
+    <div class="carousel-item">
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+
+
+
+    </div>
+
+
+    <div class="carousel-item">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+
+
+     	
+    </div>
+
+
+
+ 	  </div>
+
+
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+
+
+
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+
+
+  </div>
+
+
+						</div>
+
+
+					</div>			
+
+
+
+			</section>
+
+
+		</div>	
+
+
+
+
+		<!-------- 	Carousel ends here		------------>
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+	 <!-- bootstrap js, jquery, popper -->
+	
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+
+
+	</div>
+
+
+
+	
+</body>
+</html>
+
+ 
+
+
+
+
+
+
+
+
+
+
